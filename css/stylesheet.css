@@ -1,0 +1,84 @@
+body {
+    background: rgba(255, 255, 240, 0.8);
+    font-family: 'Josefin Sans', sans-serif;
+    color: darkslategrey;
+}
+
+/* Message block */
+.message {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+.message p {
+    margin: 0;
+}
+
+/* Avatar */
+.custom-circle {
+    line-height: 0;
+    display: inline-block;
+    border: 4px solid rgba(200, 200, 200, 0.4);
+    border-radius: 50%;
+    transition: linear 0.25s;
+    height: 128px;
+    width: 128px;
+}
+
+.custom-circle img {
+    border-radius: 50%;
+}
+
+.custom-circle:hover {
+    transition: ease-out 0.2s;
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    -webkit-transition: ease-out 0.2s;
+}
+
+/* Talk Bubble */
+.talkbubble {
+    --r: 25px;
+    --t: 30px;
+    max-width: flex;
+    padding: calc(2*var(--r)/3);
+    -webkit-mask:
+        radial-gradient(var(--t) at var(--_d) 0, #0000 98%, #000 102%) var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+        conic-gradient(at var(--r) var(--r), #000 75%, #0000 0) calc(var(--r)/-2) calc(var(--r)/-2) padding-box,
+        radial-gradient(50% 50%, #000 98%, #0000 101%) 0 0/var(--r) var(--r) space padding-box;
+    background: #1E90FF border-box;
+    color: #fff;
+}
+
+.left {
+    --_d: 0%;
+    border-left: var(--t) solid #0000;
+    place-self: start;
+}
+
+/* Stars */
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Markup */
+.custom-text-align-right {
+    text-align: right;
+}
+
+.custom-text-align-left {
+    text-align: left;
+}
+
+.custom-margin-left-10 {
+    margin-left: 10px;
+}
